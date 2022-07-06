@@ -16,9 +16,8 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh "cd SampleWebApplication"
-                sh "dotnet clean"                
-                sh "dotnet build"               
+                sh "dotnet clean /var/lib/jenkins/workspace/ravi/dotnetApp/SampleWebApplication"                
+                sh "dotnet build /var/lib/jenkins/workspace/ravi/dotnetApp/SampleWebApplication"               
             }
         }
     }
