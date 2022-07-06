@@ -5,9 +5,9 @@ pipeline {
     stages {
         stage("SCM Checkout") {
             steps {
-                git branch: 'master',
+                git branch: 'main',
                     credentialsId: "raviGitAccess",            
-                    url: 'https://github.com/avbravikanth1/my-react-app.git'
+                    url: 'https://github.com/avbravikanth1/dotnetApp.git'
 
                 dir('secondRepo') {
                     git branch: 'main',
