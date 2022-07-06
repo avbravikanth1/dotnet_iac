@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage("SCM Checkout") {
             steps {
-                git branch: 'main',
+                git branch: 'master',
                     credentialsId: "raviGitAccess",            
                     url: 'https://github.com/avbravikanth1/dotnet-sample.git'
 
