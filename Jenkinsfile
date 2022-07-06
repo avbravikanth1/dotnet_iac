@@ -12,6 +12,12 @@ pipeline {
                     credentialsId: "raviGitAccess",
                     url: 'https://github.com/avbravikanth1/dotnet_iac.git'
                 }
+            }            
+        }
+        stage('Build') {
+            steps {
+                sh "dotnet clean"                
+                sh "dotnet build"               
             }
         }
     }
