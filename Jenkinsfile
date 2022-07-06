@@ -16,6 +16,7 @@ pipeline {
         }
         stage('Build') {
             steps {
+                sh "cd SampleWebApplication"
                 sh "dotnet clean"                
                 sh "dotnet build"               
             }
