@@ -5,7 +5,7 @@ pipeline {
             steps {
                 git branch: 'main',
                     credentialsId: "raviGitAccess",            
-                    url: 'https://github.com/avbravikanth1/dotnetApp.git'
+                    url: 'https://github.com/avbravikanth1/dotnet-sample.git'
 
                 dir('secondRepo') {
                     git branch: 'main',
